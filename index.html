@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/style.css">
+    <title>Tea Cozy Website</title>
+</head>
+<body>
+    <nav class="navbar">
+    <!--LOGO-->
+    <div class="logo">
+       <a href="#">
+           <img class="primary-icon" src="./resources/images/img-tea-cozy-logo.png"></a>
+    </div>
+    <!--Navigation Menu-->
+    <ul class="nav-list" id="navi-list">
+        <li class="list-item">
+            <a href="#">Mission</a>
+        </li>
+        <li class="list-item">
+            <a href="#">Featured Tea</a>
+        </li>
+        <li class="list-item">
+            <a href="#">Locations</a>
+        </li>
+    </ul>
+    <div class="menu" id="toggle-button">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+    </div>
+    </nav>
+    <!--Hero-->
+    <div class="hero-background">
+    <div class="hero">
+        <div class="hero-inner">
+            <h2 class="hero-headline">Our Mission</h2>
+            <h4 class="hero-description">Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+        </div>
+
+    </div>
+    <main>
+    <section class="tea-cards">
+        <h2 class="teacard-header">Tea of the Month</h2>
+        <h4 class="teacard-question">What's Steeping at the Tea Cozy?</h4>
+        <div class="cards-container">
+            <div class="card tea-card">
+                <img class="berry" src="./resources/images/img-berryblitz.jpeg" alt="BerryBlitzTea">
+                <h4>Fall Berry Blitz Tea</h4>
+            </div>
+            <div class="card tea-card" class="berry">
+                <img class="berry" src="./resources/images/img-spiced-rum.jpeg" alt="">
+                <h4>Spiced Rum Tea</h4>
+            </div>
+            <div class="card tea-card">
+                <img class="berry" src="./resources/images/img-donut.jpeg" alt="">
+                <h4>Seasonal Donuts</h4>
+            </div>
+            <div class="card tea-card">
+                <img class="berry" src="./resources/images/img-myrtle-ave.jpeg" alt="">
+                <h4>Mrtyle Ave Tea</h4>
+            </div>
+            <div class="card tea-card">
+                <img class="berry" src="./resources/images/img-bedford-bizarre.jpeg" alt="">
+                <h4>Bedford Bizarre Tea</h4>
+            </div>
+        </div>
+    </div>
+    </section>
+    </main>
+    
+    <section class="locations">
+        <h2 class="locations-header">Locations</h2>
+        <div class="locationcards-container">
+            <div class="location-card">
+                <h3>Downtown</h3>
+                <p>384 W 4th St</p>
+                <p>Suite 108</p>
+                <p>Portland, Maine</p>
+            </div>
+            <div class="location-card">
+                <h3>East Bayside</h3>
+                <p>3433 Phisherman's Avenue</p>
+                <p>(Northwest Corner)</p>
+                <p>Portland, Maine</p>
+            </div>
+            <div class="location-card">
+                <h3>Oakdale</h3>
+                <p>515 Crescent Avenue</p>
+                <p>Second Floor</p>
+                <p>Portland, Maine</p>
+            </div>
+        </div>
+    </section>
+
+   <section class="contact">
+            <h3 id="tea-cozy">The Tea Cozy</h3>
+            <h5 id="contact-email">contact @theteacozy.com</h5>
+            <h5 id="phone-number">917-555-8904</h5>    
+   </section>
+
+   <div class="footer-container">
+   <footer class="footer">
+       <h5 class="copyright">copyright The Tea Cozy 2017</h5>
+   </footer>
+    </div>  
+
+</body>
+<script>
+    const toggleButton = document.getElementById('toggle-button');
+    const naviList = document.getElementById('navi-list');
+
+    toggleButton.addEventListener('click', () => {
+        naviList.classList.toggle('active');
+    })
+</script>
+</html>
